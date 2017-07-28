@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1c611fc-f88f-435f-a215-a560fef7735f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/phoneQuotes/urls.py" afterPath="$PROJECT_DIR$/phoneQuotes/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/phoneQuotes/settings.py" afterPath="$PROJECT_DIR$/phoneQuotes/settings.py" />
     </list>
     <ignored path="phoneQuotes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -71,21 +71,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/phoneQuotes/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="134" column="48" selection-start-line="134" selection-start-column="48" selection-end-line="134" selection-end-column="48" />
+            <state relative-caret-position="89">
+              <caret line="127" column="58" selection-start-line="127" selection-start-column="58" selection-end-line="127" selection-end-column="58" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/phoneQuotes/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="67" selection-start-line="23" selection-start-column="67" selection-end-line="23" selection-end-column="67" />
+            <state relative-caret-position="75">
+              <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
               <folding>
                 <element signature="e#645#686#0" expanded="true" />
               </folding>
@@ -144,8 +144,8 @@
         <option value="$PROJECT_DIR$/quotes/static/js/homepage.js" />
         <option value="$PROJECT_DIR$/phoneQuotes/wsgi.py" />
         <option value="$PROJECT_DIR$/quotes/views.py" />
-        <option value="$PROJECT_DIR$/phoneQuotes/settings.py" />
         <option value="$PROJECT_DIR$/phoneQuotes/urls.py" />
+        <option value="$PROJECT_DIR$/phoneQuotes/settings.py" />
       </list>
     </option>
   </component>
@@ -812,21 +812,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/phoneQuotes/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="134" column="48" selection-start-line="134" selection-start-column="48" selection-end-line="134" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/phoneQuotes/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="67" selection-start-line="23" selection-start-column="67" selection-end-line="23" selection-end-column="67" />
+        <state relative-caret-position="75">
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
           <folding>
             <element signature="e#645#686#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phoneQuotes/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="127" column="58" selection-start-line="127" selection-start-column="58" selection-end-line="127" selection-end-column="58" />
+          <folding />
         </state>
       </provider>
     </entry>
