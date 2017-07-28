@@ -7,6 +7,9 @@
 
 //
 $(document).ready(function() {
+    $('#quote_text').keyup(function(){
+     $('#sample_quote_text').text($(this).val());
+  });
     $("#background_color_input").change(function(){
         var backgroundColor = $("#background_color_input").val();
         $("#sample_quote_div").css("background-color", backgroundColor);
