@@ -27,7 +27,6 @@ def download(request):
             # Import font file
             cwd = os.path.join(os.getcwd(), 'quotes/')
             font_file = cwd + static('HaloHandletter.otf')
-            print(font_file)
             # Create blank image
             quote_image = Image.new('RGB', screen_dims[phone_type], bg_color)
             # Create a draw object
