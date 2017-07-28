@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1c611fc-f88f-435f-a215-a560fef7735f" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/quotes/static/css/homepage.css" afterPath="$PROJECT_DIR$/quotes/static/quotes/css/homepage.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/quotes/static/js/homepage.js" afterPath="$PROJECT_DIR$/quotes/static/quotes/js/homepage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/phoneQuotes/settings.py" afterPath="$PROJECT_DIR$/phoneQuotes/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/quotes/templates/index.html" afterPath="$PROJECT_DIR$/quotes/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/quotes/views.py" afterPath="$PROJECT_DIR$/quotes/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/phoneQuotes/urls.py" afterPath="$PROJECT_DIR$/phoneQuotes/urls.py" />
     </list>
     <ignored path="phoneQuotes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -76,12 +71,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/phoneQuotes/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="194">
               <caret line="134" column="48" selection-start-line="134" selection-start-column="48" selection-end-line="134" selection-end-column="48" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/phoneQuotes/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="67" selection-start-line="23" selection-start-column="67" selection-end-line="23" selection-end-column="67" />
+              <folding>
+                <element signature="e#645#686#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -126,7 +133,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/phoneQuotes/urls.py" />
         <option value="$PROJECT_DIR$/quotes/test.py" />
         <option value="$PROJECT_DIR$/quotes/models.py" />
         <option value="$PROJECT_DIR$/quotes/urls.py" />
@@ -139,6 +145,7 @@
         <option value="$PROJECT_DIR$/phoneQuotes/wsgi.py" />
         <option value="$PROJECT_DIR$/quotes/views.py" />
         <option value="$PROJECT_DIR$/phoneQuotes/settings.py" />
+        <option value="$PROJECT_DIR$/phoneQuotes/urls.py" />
       </list>
     </option>
   </component>
@@ -746,13 +753,6 @@
     <entry file="file://$PROJECT_DIR$/quotes/static/js/jquery-3.2.1.slim.min.js" />
     <entry file="file://$PROJECT_DIR$/quotes/static/js/index.js" />
     <entry file="file://$PROJECT_DIR$/quotes/static/css/index.css" />
-    <entry file="file://$PROJECT_DIR$/phoneQuotes/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/quotes/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -817,6 +817,16 @@
         <state relative-caret-position="194">
           <caret line="134" column="48" selection-start-line="134" selection-start-column="48" selection-end-line="134" selection-end-column="48" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phoneQuotes/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="67" selection-start-line="23" selection-start-column="67" selection-end-line="23" selection-end-column="67" />
+          <folding>
+            <element signature="e#645#686#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
