@@ -1,8 +1,9 @@
 from django.shortcuts import render
 from django.http import Http404, HttpResponse
 from PIL import Image, ImageDraw, ImageFont
-import os
+from django.contrib.staticfiles.templatetags.staticfiles import static
 import textwrap
+import os
 # Create your views here.
 
 
@@ -24,7 +25,9 @@ def download(request):
             text_color = request.POST['text_color']
             bg_color = request.POST['background_color']
             # Import font file
-            font_file = 'HaloHandletter.otf'
+            cwd = os.path.join(os.getcwd(), 'quotes/')
+            font_file = cwd + static('HaloHandletter.otf')
+            print(font_file)
             # Create blank image
             quote_image = Image.new('RGB', screen_dims[phone_type], bg_color)
             # Create a draw object
@@ -34,7 +37,7 @@ def download(request):
             text = "\n".join(parsed)
             # Instantiate variables for centering text
             font_size = 1
-            font = ImageFont.truetype('/Users/Adhaar/Desktop/Projects/phoneQuotes/quotes/HaloHandletter.otf', size=font_size)
+            font = ImageFont.truetype(font_file, size=font_size)
             image_fraction = 0.75
             dims = screen_dims[phone_type]
 
@@ -42,11 +45,11 @@ def download(request):
             while draw_obj.multiline_textsize(text, font, spacing=5)[0] <= dims[0] * image_fraction:
                 if abs(dims[1] - draw_obj.multiline_textsize(text, font, spacing=5)[1]):
                     font_size += 1
-                    font = ImageFont.truetype('/Users/Adhaar/Desktop/Projects/phoneQuotes/quotes/HaloHandletter.otf', size=font_size)
+                    font = ImageFont.truetype(font_file, size=font_size)
 
             # Correct font size
             font_size -= 1
-            font = ImageFont.truetype('/Users/Adhaar/Desktop/Projects/phoneQuotes/quotes/HaloHandletter.otf', size=font_size)
+            font = ImageFont.truetype(font_file, size=font_size)
 
             # Draw on picture
             text_width, text_height = draw_obj.multiline_textsize(text, font, spacing=5)
