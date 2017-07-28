@@ -1,0 +1,47 @@
+h2{
+    padding: 15px;
+    text-align: center;
+}
+
+
+#title_word_1{
+    color: #3cba54;
+}
+
+#title_word_2{
+    color: #4885ed;
+}
+
+#title_word_3{
+    color: #f4c20d;
+}
+
+#title_word_4{
+    color: #4885ed;
+}
+
+#title_word_5{
+    color: #db3236;
+}
+
+#sample_quote_text{
+    font-family: "Century Gothic", "sans-serif";
+    font-weight: bold;
+}
+
+#disclaimer{
+    font-style: italic;
+    font-size: 25%;
+}
+
+#sample_quote_div{
+    color: #F0F8FF;
+    border-style: hidden;
+    padding: 50px 50px 100px 25px;
+    background-color: #000000;
+}
+
+#text_color_input, #background_color_input{
+    margin-left:5px;
+    margin-right:5px;
+}

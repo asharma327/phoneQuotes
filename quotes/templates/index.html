@@ -1,0 +1,103 @@
+{% load staticfiles %}
+{#{% load static %}#}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Create Phone Background with a Quote</title>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <script src="{% static "js/homepage.js" %}"></script>
+    <link rel="stylesheet" href="{% static "css/homepage.css" %}">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+</head>
+{# Center the whole body in the middle of the page with being responsive#}
+<body>
+    {# Make it cooler looking font, color, style, each word it's own color #}
+    <div id = "heading" class="container-fluid row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8 container-fluid" id="title_div">
+            <h2 id="title_h2" class="text-muted"><span id="title_word_1">Create </span><span id="title_word_2">phone </span>
+            <span id="title_word_3">background </span><span id="title_word_4">with </span><span id="title_word_5">quotations</span></h2>
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+    <br>
+
+    <form action="{% url 'download'%}" method="post">
+    {% csrf_token %}
+    <div class="container-fluid row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-4 form-group phones">
+            <label for="select_phone">Select your phone:</label>
+            <select class="form-control" name="phone" id="select_phone">
+            <option class="phones" id="phone_type1" name="phone">iPhone 7/iPhone6(s)</option>
+            <option class="phones" id="phone_type2" name="phone">iPhone 7+/iPhone6+(s)</option>
+            <option class="phones" id="phone_type3" name="phone">Galaxy S7</option>
+            </select>
+        </div>
+        <div class="col-lg-6"></div>
+    </div>
+    <br>
+
+    <div class="container-fluid row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8 form-group" id="quote_div">
+            <textarea id="quote_text" class="form-control" name="quote" rows="3" maxlength="300" placeholder="Write Quote Here..."></textarea>
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+    <br>
+
+    {# Make each button its own color #}
+    {# Center the button within containers (find a better way)#}
+    <div class="container-fluid row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-2 dropdown" id="text_color_div">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="text_color_button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Quote Color
+            </button>
+            <div class="dropdown-menu" aria-labelledby="text_color_button" id="text_color_dropdown_div">
+                <input type="color" class="color-selectors" name="text_color" value="#F0F8FF" id="text_color_input">
+                <label for="background_color_input">Quote Color</label>
+            </div>
+        </div>
+        <div class="col-lg-8 dropdown" id="bg_color_div">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="bg_color_button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Background Color
+            </button>
+
+            <div class="dropdown-menu" aria-labelledby="bg_color_button" id="bg_color_dropdown_div">
+                <input type="color" class="color-selectors" name="background_color" value="#000000" id="background_color_input">
+                <label for="background_color_input">Background Color</label>
+            </div>
+            </div>
+    </div>
+    <br>
+
+    <div class="container-fluid row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8" id="create_photo_div">
+           <input id="create_pic_button" type="submit" value="Create Photograph" formtarget="_blank">
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+    </form>
+    <br>
+
+    <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="sample_quote col-lg-8" id="sample_quote_div">
+        <p class="sample_quote" id="sample_quote_text">Quote will look of this color.<span id="disclaimer">  Not to scale and font is cursive</span></p>
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+
+
+
+
+</body>
+</html>
