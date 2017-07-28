@@ -25,7 +25,7 @@ SECRET_KEY = 'mzvj=a10g_*$+$paq36o%4o6@=_n4+n$h=!3dc*@r%qn4i*ntx'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # APPEND_SLASH=False
 # Application definition
@@ -125,3 +125,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
