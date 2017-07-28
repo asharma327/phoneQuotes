@@ -74,8 +74,8 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/phoneQuotes/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="140" column="3" selection-start-line="140" selection-start-column="3" selection-end-line="140" selection-end-column="3" />
+            <state relative-caret-position="239">
+              <caret line="139" column="25" selection-start-line="139" selection-start-column="25" selection-end-line="139" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -857,8 +857,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/phoneQuotes/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="140" column="3" selection-start-line="140" selection-start-column="3" selection-end-line="140" selection-end-column="3" />
+        <state relative-caret-position="239">
+          <caret line="139" column="25" selection-start-line="139" selection-start-column="25" selection-end-line="139" selection-end-column="25" />
           <folding />
         </state>
       </provider>
