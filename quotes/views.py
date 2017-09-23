@@ -62,7 +62,7 @@ def download(request):
             quote_image.save(response, "PNG")
             return response
         else:
-            raise Http404
+            HttpResponse("You did not enter a quote dudeee!!!!")
     else:
         raise Http404
 

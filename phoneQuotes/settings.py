@@ -25,7 +25,7 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 SECRET_KEY = 'mzvj=a10g_*$+$paq36o%4o6@=_n4+n$h=!3dc*@r%qn4i*ntx'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -78,7 +78,6 @@ WSGI_APPLICATION = 'phoneQuotes.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 import dj_database_url
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -89,6 +88,7 @@ DATABASES = {
         "PORT": "",
     }
 }
+
 
 DATABASES['default'] = dj_database_url.config()
 # Password validation
@@ -130,10 +130,10 @@ USE_TZ = True
 # For Dev
 # STATIC_URL = '/static/'
 # STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-STATIC_ROOT = 'static'
+
 
 # For Heroku
-# STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
+STATIC_ROOT = 'static'
 STATIC_URL = '/static/'
 #
 STATICFILES_DIRS = (
