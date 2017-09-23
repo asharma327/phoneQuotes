@@ -64,7 +64,7 @@ def download(request):
         else:
             return HttpResponse("You did not enter a quote dudeee!!!!")
     else:
-        raise Http404
+        return HttpResponse("Oops :( Something went wrong. Please go back")
 
 
 
